@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="org.angelvido.text_editor.MainController">
+    <top>
+        <MenuBar>
+            <Menu text="Archivo">
+                <MenuItem text="Nuevo" onAction="#handleNewFile"/>
+                <MenuItem text="Nueva ventana" onAction="#handleNewWindow"/>
+                <MenuItem text="Abrir" onAction="#handleOpenFile"/>
+                <MenuItem text="Guardar" onAction="#handleSaveFile"/>
+                <MenuItem text="Guardar como" onAction="#handleSaveFileAs"/>
+                <SeparatorMenuItem/>
+                <MenuItem text="Salir" onAction="#handleExit"/>
+            </Menu>
+        </MenuBar>
+    </top>
+
+    <center>
+        <TextArea fx:id="textArea"/>
+    </center>
+</BorderPane>
